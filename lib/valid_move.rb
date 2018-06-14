@@ -2,11 +2,13 @@
 def valid_move?(board, index)
       if position_taken?(board, index) == false && (index >= 0 && index <= 8)
             true
-      elsif position_taken?(board, index) == false && index > 8
-            false||nil
-      elsif position_taken?(board, index) == true && (index >= 0 && index <= 8)
-            false||nil
-      elsif position_taken?(board, index) == true && index > 8
+      # elsif position_taken?(board, index) == false && index > 8
+      #       false||nil
+      # elsif position_taken?(board, index) == true && (index >= 0 && index <= 8)
+      #       false||nil
+      # elsif position_taken?(board, index) == true && index > 8
+      #       false||nil
+      else 
             false||nil
       end
 end

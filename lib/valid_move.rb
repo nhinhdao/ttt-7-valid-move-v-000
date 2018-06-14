@@ -4,6 +4,8 @@ def valid_move?(board, index)
             true
       elsif position_taken?(board, index) == true && index > 8
             false
+      else
+            nil
       end
 end
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
